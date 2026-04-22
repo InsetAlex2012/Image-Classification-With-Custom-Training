@@ -2,17 +2,17 @@
 
 ![AI Image Classifier Screenshot](screenshot.png)
 
-A modern **AI image classification application** built with Python and PyTorch.  
-It uses a pretrained ResNet-18 model to classify images into **1000 ImageNet categories**, with a clean GUI and real-time progress tracking.
+A modern AI image classification application built with Python and PyTorch.  
+It uses a pretrained ResNet-18 model to classify images into 1000 ImageNet categories, with a clean GUI and real-time progress tracking.
 
 ---
 
 ## Features
 
 ### AI Classification
-- Pretrained **ResNet-18 (ImageNet) model**
-- Classifies images into **1000 classes**
-- Shows **Top-5 predictions**
+- Pretrained ResNet-18 (ImageNet model)
+- Classifies images into 1000 classes
+- Shows Top-5 predictions
 - Displays confidence percentages
 - Automatically downloads and caches ImageNet labels
 
@@ -31,11 +31,11 @@ It uses a pretrained ResNet-18 model to classify images into **1000 ImageNet cat
 
 ### Graphical User Interface
 - Built with Tkinter + ttk styling
-- Modern dark/light hybrid theme
+- Modern theme
 - Image preview panel
 - Activity log window
 - Status bar with live updates
-- Responsive layout with threading (UI never freezes)
+- Thread-safe background processing (UI does not freeze)
 
 ---
 
@@ -46,9 +46,9 @@ It uses a pretrained ResNet-18 model to classify images into **1000 ImageNet cat
 - Torchvision (ResNet-18 model)
 - Pillow (PIL)
 - Tkinter (GUI)
-- ttk / ttk themes
-- JSON (label caching)
-- urllib (label download)
+- ttk
+- JSON
+- urllib
 
 ---
 
@@ -56,5 +56,31 @@ It uses a pretrained ResNet-18 model to classify images into **1000 ImageNet cat
 
 1. Install dependencies:
 
-```bash
 pip install torch torchvision pillow
+
+2. Run the program:
+
+python classifier.py
+
+---
+
+## Required Files
+
+- classifier.py
+- images/ folder (optional for batch testing)
+- Internet connection (first run only, for downloading labels)
+
+---
+
+## Notes
+
+- First run downloads ImageNet labels automatically
+- Uses pretrained model (no training required)
+- Designed for educational AI + GUI development
+- Folder mode processes images sequentially with progress tracking
+
+---
+
+## Author
+
+AlexIsNotInset
